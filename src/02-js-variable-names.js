@@ -1,12 +1,12 @@
-function calc(nums) {
-    let total = 0;
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] > 0) {
-        total += nums[i];
+function sumPositiveNumbers(numbers) {
+    let totalPositiveSum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] > 0) {
+        totalPositiveSum += numbers[i];
       }
     }
-    return total;
+    return totalPositiveSum;
   }
   
   const numbers = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10];
-  console.log(calc(numbers));
+  console.log(sumPositiveNumbers(numbers));
